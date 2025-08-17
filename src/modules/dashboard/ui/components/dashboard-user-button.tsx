@@ -1,7 +1,7 @@
 import { authClient } from "@/lib/auth-client";
 import { DropdownMenu,DropdownMenuContent,DropdownMenuItem,DropdownMenuLabel,DropdownMenuSeparator,DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Avatar,AvatarImage } from "@/components/ui/avatar";
-import { GenerateAvatar } from "@/components/ui/generate-avatar";
+import { GenerateAvatar } from "@/components/generate-avatar";
 import { ChevronDownIcon, CreditCardIcon,LogOutIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import {Drawer, DrawerContent, DrawerTrigger,DrawerHeader, DrawerTitle,DrawerFooter,DrawerDescription} from "@/components/ui/drawer";
