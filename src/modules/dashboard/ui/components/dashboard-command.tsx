@@ -1,6 +1,6 @@
 import { CommandResponsiveDialog, CommandInput, CommandItem, CommandList, CommandGroup, CommandEmpty} from "@/components/ui/command";
 import { Dispatch, SetStateAction, useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { useTRPC } from "@/trpc/client";
 import { GenerateAvatar } from "@/components/generate-avatar";
