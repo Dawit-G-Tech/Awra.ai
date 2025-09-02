@@ -1,9 +1,9 @@
-import { createTRPCRouter, baseProcedure, protectedProcedure, premiumProcedure } from "@/trpc/init";
+import { createTRPCRouter, protectedProcedure, premiumProcedure } from "@/trpc/init";
 import { db } from "@/db";
 import {agents, meetings} from "@/db/schema";
 import { agentsInsertschema, agentsUpdateschema } from "../schema";
 import {z} from "zod";
-import { and, desc, eq, getTableColumns, ilike, sql, count } from "drizzle-orm";
+import { and, desc, eq, getTableColumns, ilike, count } from "drizzle-orm";
 import { DEFAULT_PAGE, DEFAULT_PAGE_SIZE, MAX_PAGE_SIZE, MIN_PAGE_SIZE } from "@/constants";
 import { TRPCError } from "@trpc/server";
 

@@ -3,12 +3,10 @@
 import { ColumnDef } from "@tanstack/react-table"
 import { MeetingGetMany } from "../../type"
 import { GenerateAvatar } from "@/components/generate-avatar"
-import { CornerDownRightIcon, VideoIcon,CircleCheckIcon, CircleXIcon, ClockArrowUpIcon, ClockFadingIcon,LoaderIcon } from "lucide-react"
+import { CornerDownRightIcon,CircleCheckIcon, CircleXIcon, ClockArrowUpIcon, ClockFadingIcon,LoaderIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { format } from "date-fns";
-import humanizeDuration from "humanize-duration";
 import { cn, formatDuration } from "@/lib/utils"
-import { Cancel } from "@radix-ui/react-alert-dialog"
 
  
 const statusIconMap = {

@@ -1,5 +1,5 @@
 import { polarClient } from "@/lib/polar";
-import { baseProcedure, createTRPCRouter, protectedProcedure } from "@/trpc/init";
+import { createTRPCRouter, protectedProcedure } from "@/trpc/init";
 import  { agents, meetings } from "@/db/schema";
 import { db } from "@/db";
 import { eq, count } from "drizzle-orm";

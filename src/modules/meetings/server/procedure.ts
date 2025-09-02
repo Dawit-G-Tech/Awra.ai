@@ -1,4 +1,4 @@
-import { createTRPCRouter, baseProcedure, protectedProcedure, premiumProcedure } from "@/trpc/init";
+import { createTRPCRouter, protectedProcedure, premiumProcedure } from "@/trpc/init";
 import { db } from "@/db";
 import {agents, meetings, user} from "@/db/schema";
 import {z} from "zod";

@@ -1,5 +1,5 @@
 "use client";
-import {email, set, z} from "zod";
+import {z} from "zod";
 import {zodResolver} from "@hookform/resolvers/zod";
 import { OctagonAlertIcon } from "lucide-react";
 import { useForm } from "react-hook-form"; 

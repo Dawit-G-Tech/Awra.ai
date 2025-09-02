@@ -13,7 +13,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog"
 import { useIsMobile } from "@/hooks/use-mobile"
-import {Drawer,DrawerContent,DrawerHeader,DrawerTitle,DrawerDescription,} from "@/components/ui/drawer";
+import {Drawer,DrawerContent,DrawerHeader,DrawerTitle,} from "@/components/ui/drawer";
 
 function Command({
   className,
