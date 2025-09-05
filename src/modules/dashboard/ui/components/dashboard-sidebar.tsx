@@ -1,7 +1,7 @@
 "use client";
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup,SidebarGroupContent, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
-import { VideoIcon, BotIcon, StarIcon } from "lucide-react";
+import { VideoIcon, BotIcon, StarIcon, SettingsIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -19,6 +19,11 @@ const firstSection = [
         icon: BotIcon,
         label: "Agents",
         href: "/agents",
+    },
+    {
+        icon: SettingsIcon,
+        label: "Settings",
+        href: "/settings",
     },
 ];
 
