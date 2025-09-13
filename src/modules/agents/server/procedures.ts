@@ -123,6 +123,15 @@ export const agentsRouter = createTRPCRouter({
         totalPages,
     };
     }),
+
+    getCount: protectedProcedure.query(async ({ ctx }) => {
+    const [result] = await db
+        .select({ count: count() })
+        .from(agents)
+        .where(eq(agents.userId, ctx.auth.user.id));
+    return result.count;
+    }),
+
     create: premiumProcedure("agents")
         .input(agentsInsertschema)
         .mutation(async({ input, ctx}) =>{

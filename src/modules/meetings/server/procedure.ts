@@ -23,6 +23,14 @@ export const meetingsRouter = createTRPCRouter({
         return token;
     }),
 
+    getCount: protectedProcedure.query(async ({ ctx }) => {
+    const [result] = await db
+        .select({ count: count() })
+        .from(agents)
+        .where(eq(agents.userId, ctx.auth.user.id));
+    return result.count;
+    }),
+    
     getTranscript : protectedProcedure
         .input(z.object({id: z.string()}))
         .query(async ({input, ctx}) =>{

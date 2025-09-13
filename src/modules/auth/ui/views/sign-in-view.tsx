@@ -1,7 +1,7 @@
 "use client";
 import { z } from "zod";
 import {zodResolver} from "@hookform/resolvers/zod";
-import { OctagonAlertIcon } from "lucide-react";
+import { OctagonAlertIcon,EyeIcon, EyeOffIcon } from "lucide-react";
 import { useForm } from "react-hook-form"; 
 import { useRouter } from "next/navigation";
 import {FaGithub, FaGoogle} from "react-icons/fa";
@@ -26,6 +26,7 @@ export const SignInView = () => {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -118,16 +119,34 @@ export const SignInView = () => {
                     <FormItem>
                       <FormLabel>Password</FormLabel>
                       <FormControl>
-                        <Input 
-                          type="password" 
-                          placeholder="*********" 
-                          {...field} 
-                        />
+                        <div className="relative">
+                            <Input
+                                type={showPassword ? "text" : "password"}
+                                placeholder="********"
+                                {...field}
+                            />
+                            <button
+                                type="button"
+                                onClick={() => setShowPassword(!showPassword)}
+                                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground"
+                            >
+                                {showPassword ? (
+                                    <EyeIcon className="w-4 h-4" />
+                                ) : (
+                                    <EyeOffIcon className="w-4 h-4" />
+                                )}
+                            </button>
+                        </div>
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}      
                   /> 
+                  <div className="flex justify-end text-xs">
+                    <Link href="/forgot-password" className="text-muted-foreground hover:text-primary underline underline-offset-4">
+                        Forgot password?
+                    </Link>
+                  </div>
                 </div>
                 {!!error && (
                 <Alert className="bg-destructive/10 border-none">
