@@ -49,19 +49,16 @@
 <div align="center" style="margin-top: 2rem;">
 
 <h4>📊 Meeting Page</h4>
-<img width="600" height="450" alt="image" src="" />
+<img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/cf926020-f47a-4c8b-9c6a-a74ddf1386fb" />
 <br/><br/>
 
 <h4>🧠 Create Your AI Agent</h4>
-<img width="600" height="450" alt="Agent Creation" src="" />
+<img width="600" height="450" alt="Agent Creation" src="https://github.com/user-attachments/assets/fb86787a-83d0-4bc4-bac7-2cf3b2ad490a" />
 <br/><br/>
 
-<h4>👋 Chat Page</h4>
-<img width="600" height="450" alt="image" src="" />
-<br/><br/>
 
 <h4> 🗫 Upgrade Page</h4>
-<img width="600" height="450" alt="image" src="" />
+<img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/73fdf9b9-9a97-4455-8f31-088b6286f0e4" />
 
 </div>
 
